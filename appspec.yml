@@ -1,0 +1,16 @@
+# CodeDeploy for EC2 deployment demo
+version: 0.0
+os: linux 
+files:
+  - source: /
+    destination: /tmp/flask-demo
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+      
