@@ -3,4 +3,4 @@ yum update -y
 yum install pip -y
 # pip install -r requirements.txt
 # Below is China pip resource specifc
-pip install Flask==1.1.2 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+pip install Flask==2.1.0 -i https://pypi.tuna.tsinghua.edu.cn/simple/
